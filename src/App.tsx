@@ -1,11 +1,15 @@
 import React from 'react';
-import './App.scss';
+import Header from './components/Header';
+import RecipeInfo from './components/RecipeInfo';
+import SearchResults from './components/SearchResults';
 
 const App: React.FC = () => {
   return (
-    <div className="hello">
-      <h1>Hello</h1>
-      <h1>Hello</h1>
+    <div className="container">
+      <div className="overlay hidden"></div>
+      <Header />
+      <SearchResults />
+      <RecipeInfo />
     </div>
   );
 };
